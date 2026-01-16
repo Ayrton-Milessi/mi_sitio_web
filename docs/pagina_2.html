@@ -17,68 +17,104 @@
                 <li><a href="pagina_1.html">Experiencia</a></li>
                 <li><a href="pagina_2.html">Proyectos</a></li>
                 <li><a href="pagina_3.html">Formación</a></li>
-                <li><a href="servidores.html">Servidores Web</a></li>
+                <!-- <li><a href="servidores.html">Servidores Web</a></li> -->
             </ul>
         </nav>
     </header>
 
      <!-- Contenido principal -->
     <main>
-        <div class="container"></div>
+        <div class="container">
             <!-- Sección Proyectos -->
-             <section id="proyectos" class="section">
-                 <h2>Proyectos</h2>
-                 <p>Con los conocimientos adquiridos en el área de la Ciencia de Datos, he participado en diferentes proyectos (colaborativos y personales) que me permitieron aplicar mis habilidades aprendidas en el campo práctico. Estas etapas me permitieron seguir ganando experiencia en el área para fortalecer mis conocimientos.</p>
-             </section>
+            <section id="proyectos" class="section">
+                <h2>Proyectos</h2>
+                <p>Con los conocimientos adquiridos en el área de la Ciencia de Datos, he participado en diferentes proyectos (colaborativos y personales) que me permitieron aplicar mis habilidades aprendidas en el campo práctico. Estas etapas me permitieron seguir ganando experiencia en el área para fortalecer mis conocimientos.</p>
+            </section>
 
-            <!-- Sección de Proyectos -->
-            <section id="Proyectos" class="section">
-                <div class="Proyectos-list" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;">
-                    
+            <!-- Sección de Proyectos Grid (apilados verticalmente) -->
+            <section id="Proyectos" class="section" style="padding:24px 0;">
+                <div class="proyectos-list" style="display:flex;flex-direction:column;gap:32px;align-items:stretch;">
+
                     <!-- Proyecto 1 -->
-                    <div class="Proyectos-item card" style="flex: 1 1 420px; min-width:320px; max-width:480px; background: linear-gradient(135deg, #f7c1ff 60%, #caf0f8 100%);">
-                        <h3 style="text-align:center; font-size:1.3em; margin-bottom:10px;"><span style="color:#d80000; font-size:1.5em;">&#x1F3CE;&#xFE0F;</span> Análisis de datos de Fórmula 1 de la temporada 2024</h3>
-                        <p><strong>Período:</strong> Septiembre 2024 - Diciembre 2024</p>
-                        <p style="text-align:left;"><strong>Herramientas:</strong> <span style="color:#00b4d8;">Python</span>, <span style="color:#a259c6;">Pandas</span>, <span style="color:#e9523b;">FastF1</span>, <span style="color:#a259c6;">Matplotlib</span>, <span style="color:#333;">GitHub</span></p>
+                    <div class="proyectos-item card" style="width:100%;padding:28px;border-radius:12px;
+                        background:linear-gradient(135deg,#8A2BE2 0%, #7EC8E3 100%);
+                        box-shadow:0 8px 26px rgba(0,0,0,0.12);color:#fff;min-height:360px;box-sizing:border-box;">
+                        <h3 style="color:#fff;"><span style="font-size:1.5em;">&#x1F3CE;&#xFE0F;</span> Análisis de datos de Fórmula 1</h3>
+                        <p><strong>Período:</strong> Septiembre 2024 - Actualidad</p>
+                        <p><strong>Herramientas:</strong> Python, Pandas, FastF1, Matplotlib, GitHub</p>
                         <p>Analicé los datos de las 24 carreras disputadas en 2024 de la Fórmula 1, explorando:</p>
-                        <ul style="margin-left:18px;">
+                        <ul>
                             <li>Ritmo de carrera (individual y en equipo).</li>
                             <li>Cambios en las posiciones.</li>
                             <li>Velocidades máximas y mínimas.</li>
                             <li>Telemetría de vueltas rápidas.</li>
                         </ul>
-                        <div style="display:flex; justify-content:center; gap:12px; margin:18px 0;">
-                            <a class="button" href="https://github.com/Ayrton-Milessi/Formula-1" target="_blank">Repositorio GitHub</a>
+                        <div class="button-group" style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:12px;">
+                            <a class="button" href="https://github.com/Ayrton-Milessi/Formula-1" target="_blank"
+                               style="padding:10px 16px;border-radius:8px;background:rgba(255,255,255,0.95);color:#1a1a1a;text-decoration:none;font-weight:600;">Repositorio GitHub</a>
                         </div>
-                        <div style="text-align:center; margin-top:12px;">
-                            <img src="../imagenes/Lap_time_distribution_drivers.png" alt="Gráfico de análisis Fórmula 1" style="max-width:100%; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.12); margin-bottom:8px;">
-                            <p style="text-align:center; font-size:0.95em; color:#d80000;">Gráfico de tiempos de vuelta de cada piloto en el Gran Premio de Azerbaiyán 2024</p>
-                        </div>
+
+                        <img src="../imagenes/Lap_time_distribution_drivers.png" alt="Gráfico de análisis Fórmula 1" class="project-image"
+                             style="display:block;margin:18px auto 8px auto;width:100%;max-width:1200px;border-radius:8px;border:1px solid rgba(255,255,255,0.15);height:auto;">
+                        <p class="image-caption" style="text-align:center;font-size:1.05em;margin-top:6px;color:rgba(255,255,255,0.95);">Gráfico de tiempos de vuelta de cada piloto en el Gran Premio de Azerbaiyán 2024</p>
                     </div>
 
                     <!-- Proyecto 2 -->
-                    <div class="Proyectos-item card" style="flex: 1 1 420px; min-width:320px; max-width:480px; background: linear-gradient(135deg, #ffe5d9 60%, #caf0f8 100%);">
-                        <h3 style="text-align:center; font-size:1.3em; margin-bottom:10px;"><span style="color:#a259c6; font-size:1.5em;">&#128200;</span> Análisis estadístico del nivel educativo primario del departamento Victoria en el año 2023</h3>
+                    <div class="proyectos-item card" style="width:100%;padding:28px;border-radius:12px;
+                        background:linear-gradient(135deg,#7EC8E3 0%, #9B6BFF 100%);
+                        box-shadow:0 8px 26px rgba(0,0,0,0.12);color:#08304b;min-height:360px;box-sizing:border-box;">
+                        <h3 style="color:#fff;"><span style="font-size:1.5em;">&#127760;</span> Análisis de registros de servidor web</h3>
+                        <p><strong>Período:</strong> Septiembre 2025 - Octubre 2025</p>
+                        <p><strong>Herramientas:</strong> Grafana, Python, PostgreSQL, ETL, Data Warehouse</p>
+                        <p>En conjunto con mis compañeros, diseñamos e implementamos una arquitectura para analizar datos de archivos logs de servidores Apache.</p>
+                        <ul>
+                            <li>Implementamos un Data Warehouse (esquema estrella) para almacenar y consultar los datos de manera eficiente.</li>
+                            <li>Desarrollamos un proceso ETL para asegurar la calidad de los datos haciendo la limpieza y transformación necesarias.</li>
+                            <li>También detectamos los bots dentro de los registros para mejorar la precisión del análisis.</li>
+                            <li>Aplicamos un algoritmo de Minería de Datos para encontrar patrones en la navegación de los usuarios.</li>
+                            <li>Conectamos nuestro DW con Grafana para crear dashboards interactivos y visualizaciones de alto valor.</li>
+                        </ul>
+
+                        <div class="button-group" style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:14px;">
+                            <a class="button" href="https://www.linkedin.com/in/ayrton-milessi/overlay/projects/1454749995/multiple-media-viewer/?profileId=ACoAAFKUGNoBbagr_gU01ehP-Fa2t4UZugesNQo&treasuryMediaId=1764543013085" target="_blank"
+                               style="padding:10px 16px;border-radius:8px;background:rgba(255,255,255,0.95);color:#08304b;text-decoration:none;font-weight:600;">Proyecto completo</a>
+                        </div>
+
+                        <img src="../imagenes/dash.jpg" alt="Primera parte del dashboard" class="project-image"
+                             style="display:block;margin:18px auto 8px auto;border-radius:8px;border:1px solid rgba(0,0,0,0.08);height:auto;">
+                        <p class="image-caption" style="text-align:center;font-size:1.05em;margin-top:6px;color:rgba(8,48,75,0.95);">Primera parte del dashboard de análisis de registros de servidor web</p>
+                    </div>
+
+                    <!-- Proyecto 3 -->
+                    <div class="proyectos-item card" style="width:100%;padding:28px;border-radius:12px;
+                        background:linear-gradient(135deg,#8A2BE2 0%, #7EC8E3 100%);
+                        box-shadow:0 8px 26px rgba(0,0,0,0.12);color:#fff;min-height:360px;box-sizing:border-box;">
+                        <h3 style="color:#fff;"><span style="font-size:1.5em;">&#128200;</span> Análisis estadístico del nivel educativo primario del departamento Victoria en el año 2023</h3>
                         <p><strong>Período:</strong> Marzo 2024 - Junio 2024</p>
-                        <p style="text-align:left;"><strong>Herramientas:</strong> <span style="color:#00b4d8;">R</span>, <span style="color:#a259c6;">Jupyter Notebook</span>, <span style="color:#37cf4b;">Anaconda</span></p>
+                        <p><strong>Herramientas:</strong> R, Jupyter Notebook, Anaconda</p>
                         <p>Realicé un análisis multivariado del nivel educativo primario en el departamento Victoria, identificando:</p>
-                        <ul style="margin-left:18px;">
+                        <ul>
                             <li>Patrones de rendimiento.</li>
                             <li>Puntos de éxito.</li>
                             <li>Áreas de mejora.</li>
                             <li>Abanderados nacionales y provinciales.</li>
                         </ul>
-                        <div style="display:flex; justify-content:center; gap:12px; margin:18px 0;">
-                            <a class="button" href="https://docs.google.com/document/d/1GaGtaL0Ua5hfG_ffPDE8-pnbKeDwDBltgPpLozQ_OLo/edit?usp=sharing" target="_blank">Informe completo</a>
-                            <a class="button" href="https://github.com/Ayrton-Milessi/VICTORIA-Exploracion-de-Datos-Multivariados" target="_blank">Repositorio GitHub</a>
+
+                        <div class="button-group" style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:12px;">
+                            <a class="button" href="https://docs.google.com/document/d/1GaGtaL0Ua5hfG_ffPDE8-pnbKeDwDBltgPpLozQ_OLo/edit?usp=sharing" target="_blank"
+                               style="padding:10px 16px;border-radius:8px;background:rgba(255,255,255,0.95);color:#1a1a1a;text-decoration:none;font-weight:600;">Informe completo</a>
+                            <a class="button" href="https://github.com/Ayrton-Milessi/VICTORIA-Exploracion-de-Datos-Multivariados" target="_blank"
+                               style="padding:10px 16px;border-radius:8px;background:rgba(255,255,255,0.9);color:#1a1a1a;text-decoration:none;font-weight:600;">Repositorio GitHub</a>
                         </div>
-                        <div style="text-align:center; margin-top:12px;">
-                            <img src="../imagenes/EDM.jpg" alt="Gráfico de análisis multivariado" style="max-width:100%; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.12); margin-bottom:8px;">
-                            <p style="text-align:center; font-size:0.95em; color:#a259c6;">Gráfico de comparación de promedio de Matemática en Primer Grado por Turno</p>
-                        </div>
+
+                        <img src="../imagenes/EDM.jpg" alt="Gráfico de análisis multivariado" class="project-image"
+                             style="display:block;margin:18px auto 8px auto;border-radius:8px;border:1px solid rgba(255,255,255,0.15);height:auto;">
+                        <p class="image-caption" style="text-align:center;font-size:1.05em;margin-top:6px;color:rgba(255,255,255,0.95);">Gráfico de comparación de promedio de Matemática en Primer Grado por Turno</p>
                     </div>
+
                 </div>
-    
+            </section>
+        </div>
     </main>
 
     <!-- Pie de página -->
@@ -95,7 +131,7 @@
             </a>
         </div>
         <br>
-        <p class="copyright">&copy; 2025 - Ayrton Milessi</p>
+        <p class="copyright">&copy; 2026 - Ayrton Milessi</p>
     </footer>
 
 </body>
